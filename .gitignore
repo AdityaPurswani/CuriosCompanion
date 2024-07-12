@@ -1,1 +1,8 @@
-\.env
+**/.ipynb_checkpoints
+__pycache__/
+node_modules/
+/.venv/
+/data/
+/rsconnect-python/
+/.env
+.DS_Store
