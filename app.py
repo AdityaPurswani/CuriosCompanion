@@ -10,7 +10,7 @@ messages = []
 input_video_clip(
     "clip",
     reset_on_record=True,
-    class_="mt-3 mx-auto",
+    class_="mt-5 mx-auto",
     style=css(width="600px", max_width="100%"),
     video_bits_per_second=256000,
     audio_bits_per_second=64000,
@@ -58,7 +58,7 @@ def response():
     messages = chat_result_messages[:]
     
     audio_spinner(src=chat_result_audio)
-    
+
 with ui.panel_fixed(bottom=0, left=0, right=0, height="auto", id="footer"):
     with ui.div(class_="mx-auto", style=css(width="600px", max_width="100%")):
         with ui.div(class_="float-left"):
@@ -68,7 +68,25 @@ with ui.panel_fixed(bottom=0, left=0, right=0, height="auto", id="footer"):
             with ui.a(href="https://github.com/AdityaPurswani"):
                 icon_svg("github", margin_right="0.5em")
                 "View source code"
-                
+
+with ui.panel_fixed(top=0, left=0, right=0, height="auto", id="header"):
+    with ui.div(class_="mx-auto", style=css(width="600px", max_width="100%")):
+        with ui.div(class_="float-center"):
+            "Curious Companion"
+      
+ui.head_content(
+    ui.tags.style(
+        """
+        #header {
+            padding: 0.5em 0.7em;
+            background-color: var(--bs-primary);
+            color: white;
+            
+        }
+        """
+    )
+)
+          
 ui.head_content(
     ui.tags.style(
         """
