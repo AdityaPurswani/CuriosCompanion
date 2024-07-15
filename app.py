@@ -36,8 +36,9 @@ def response():
         with ui.card(class_="mt-3 mx-auto", style=css(width="600px", max_width="100%")):
             ui.markdown(
                 """
-                **Instructions:** Record a short video clip to start chatting with GPT-4o.
-                After it responds, you can record another clip to continue the conversation.
+                **Instructions:** Ask ChatGPT-4o any question you want to by recording your clips and once its 
+                done answering you can ask more question again and again until you want to. 
+                
                 Reload the browser to start a new conversation.
 
                 Some ideas to get you started:
@@ -65,23 +66,24 @@ with ui.panel_fixed(bottom=0, left=0, right=0, height="auto", id="footer"):
             "Built in Python with "
             ui.a("Shiny", href="https://shiny.posit.co/py/")
         with ui.div(class_="float-right"):
-            with ui.a(href="https://github.com/AdityaPurswani"):
+            with ui.a(href="https://github.com/AdityaPurswani/CuriosCompanion"):
                 icon_svg("github", margin_right="0.5em")
                 "View source code"
 
 with ui.panel_fixed(top=0, left=0, right=0, height="auto", id="header"):
     with ui.div(class_="mx-auto", style=css(width="600px", max_width="100%")):
-        with ui.div(class_="float-center"):
-            "Curious Companion"
+        with ui.div(class_="items-center"):
+            "CURIOUS COMPANION"
       
 ui.head_content(
     ui.tags.style(
         """
         #header {
             padding: 0.5em 0.7em;
-            background-color: var(--bs-primary);
-            color: white;
-            
+            background-color: #6fc276;
+            color: black;
+            text-align: center;
+            font-weight: bold;
         }
         """
     )
@@ -92,11 +94,11 @@ ui.head_content(
         """
         #footer {
             padding: 0.5em 0.7em;
-            background-color: var(--bs-primary);
-            color: white;
+            background-color: #6fc276;
+            color: black;
         }
         #footer a {
-            color: white;
+            color: black;
         }
         """
     )
