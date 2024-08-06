@@ -1,5 +1,1 @@
-/.venv/
-/data/
-/rsconnect-python/
-/.env
-.DS_Store
+.env

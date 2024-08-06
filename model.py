@@ -8,8 +8,13 @@ from media_extractor import split_video
 import datauri
 
 dotenv.load_dotenv()
-if os.environ.get("OPENAI_API_KEY") is None:
-    raise ValueError("OPENAI_API_KEY not found in .env file")
+
+api_key = os.environ["OPENAI_API_KEY"]='openai api key here'
+
+#OR
+# api_key = os.environ.get["OPENAI_API_KEY"]
+# if not api_key:
+#   raise ValueError("OPENAI_API_KEY not found in .env file")
 
 client = AsyncOpenAI()
 
