@@ -7,14 +7,14 @@ from shiny import ui
 from media_extractor import split_video
 import datauri
 
-dotenv.load_dotenv()
+dotenv.load_dotenv(override=True)
 
-api_key = os.environ["OPENAI_API_KEY"]='openai api key here'
+api_key = os.environ["OPENAI_API_KEY"]='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'
 
-#OR
-# api_key = os.environ.get["OPENAI_API_KEY"]
+# OR
+# api_key = os.environ.get("OPENAI_API_KEY")
 # if not api_key:
-#   raise ValueError("OPENAI_API_KEY not found in .env file")
+#     raise ValueError("OPENAI_API_KEY not found in .env file")
 
 client = AsyncOpenAI()
 
