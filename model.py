@@ -9,7 +9,7 @@ import datauri
 
 dotenv.load_dotenv(override=True)
 
-api_key = os.environ["OPENAI_API_KEY"]=''
+api_key = os.environ["OPENAI_API_KEY"]='your api key'
 
 # OR
 # api_key = os.environ.get("OPENAI_API_KEY")
