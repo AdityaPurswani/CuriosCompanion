@@ -1,1 +1,5 @@
 .env
+dot_env.py
+/__pycache__
+/datauri/__pycache__
+/media_extractor/__pycache__
